@@ -6,7 +6,7 @@
     "start": "npx expo start",
     "android": "npx expo run:android",
     "ios": "npx expo run:ios",
-    "build": "npx expo export:web",
+    "build": "npx expo export:web --output web-build",
     "web": "npx expo start --web"
   },
   "dependencies": {
