@@ -1,6 +1,5 @@
-import createExpoWebpackConfigAsync from '@expo/webpack-config';
+const { withExpo } = require('@expo/webpack-config');
 
-export default async function (env, argv) {
-  const config = await createExpoWebpackConfigAsync(env, argv);
-  return config;
+module.exports = async function (env, argv) {
+  return await withExpo(env, argv);
 };
